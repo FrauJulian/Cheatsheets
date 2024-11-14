@@ -1,11 +1,11 @@
 # Selfmade Cheatsheets
 
-- C#
-  - [Keywords](https://github.com/FrauJulian/Selfmade-Cheatsheets/blob/main/CSHARP/KEYWORDS.md)
-  - [Operators](https://github.com/FrauJulian/Selfmade-Cheatsheets/blob/main/CSHARP/OPERATORS.md)
+- [C#](CSHARP)
+  - [Keywords](CSHARP/KEYWORDS.md)
+  - [Operators](CSHARP/OPERATORS.md)
   - [Ref & Out](https://github.com/FrauJulian/Selfmade-Cheatsheets/blob/main/CSHARP/REF%20%26%20OUT.md)
   - [LINQ](https://github.com/FrauJulian/Selfmade-Cheatsheets/blob/main/CSHARP%20LINQ/OVERVIEW.md)
-- [Data Processing](https://github.com/FrauJulian/Selfmade-Cheatsheets/blob/main/DATAPROCESSING.md)
+- [Data Processing](DATAPROCESSING.md)
 
 &nbsp;
 
