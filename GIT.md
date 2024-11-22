@@ -75,7 +75,7 @@
 ### 5.2 Änderungen rückgängig machen
 
 | Befehl | Beschreibung |
-|--------|--------------|
+|------------|--------------|
 | `git revert <commit-id>` | Einen Commit rückgängig machen, ohne die Historie zu ändern. |
 | `git reset --hard <commit-id>` | Zum angegebenen Commit zurücksetzen, alle Änderungen verwerfen. |
 | `git reset --soft <commit-id>` | Zum angegebenen Commit zurücksetzen, Änderungen aber im Staging-Bereich behalten. |
