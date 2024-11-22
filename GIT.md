@@ -1,6 +1,6 @@
 # Git Befehle im Terminal
 
-## 1. Git Befehle
+## 1. Repository Management
 
 ### 1.1 Repository erstellen oder klonen
 
@@ -9,7 +9,9 @@
 | `git init` | Neues lokales Git-Repository erstellen. |
 | `git clone <repository-url>` | Remote Repository klonen. |
 
-### 1.2 Status und Log
+## 2. Änderungen verfolgen
+
+### 2.1 Status und Log
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -17,7 +19,7 @@
 | `git log` | Log der Commits anzeigen. |
 | `git log --oneline` | Log in komprimierter Form anzeigen. |
 
-### 1.3 Änderungen tracken
+### 2.2 Änderungen hinzufügen und committen
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -26,7 +28,9 @@
 | `git commit -m "Nachricht"` | Änderungen mit einer Nachricht committen. |
 | `git commit -a -m "Nachricht"` | Alle geänderten Dateien direkt committen (ohne `git add`). |
 
-### 1.4 Branches
+## 3. Branching
+
+### 3.1 Branch erstellen und wechseln
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -35,55 +39,16 @@
 | `git checkout <branch-name>` | Zu einem bestehenden Branch wechseln. |
 | `git checkout -b <branch-name>` | Neuen Branch erstellen und wechseln. |
 
-### 1.5 Commit Nachrichten bearbeiten
+### 3.2 Branch zurücksetzen
 
 | Befehl | Beschreibung |
 |--------|--------------|
-| `git commit --amend` | Die letzte Commit-Nachricht ändern. |
+| `git reset --keep <commit-id>` | Änderungen zurücksetzen, behält lokale Änderungen bei, wenn keine Konflikte bestehen. |
+| `git reset --hard origin/<branch-name>` | Setzt den Branch auf den Zustand des Remote-Branches zurück. |
 
-### 1.6 Git Aliase erstellen
+## 4. Remote Repositories
 
-| Befehl | Beschreibung |
-|--------|--------------|
-| `git config --global alias.<alias-name> '<git-command>'` | Alias für einen Git-Befehl erstellen. Zum Beispiel: `git config --global alias.co 'checkout'`. |
-
-### 1.7 Temporäre Commits entfernen (Reflog)
-
-| Befehl | Beschreibung |
-|--------|--------------|
-| `git reflog` | Übersicht über alle Änderungen am Branch. |
-| `git reset --hard HEAD@{n}` | Zum bestimmten Punkt in der Historie zurückkehren, basierend auf der Reflog-Referenz. |
-
-### 1.8 Git Cherry-Pick
-
-| Befehl | Beschreibung |
-|--------|--------------|
-| `git cherry-pick <commit-id>` | Einen bestimmten Commit aus einem anderen Branch anwenden. |
-
-### 1.9 Git Bisect (Fehlersuche)
-
-| Befehl | Beschreibung |
-|--------|--------------|
-| `git bisect start` | Startet die Fehlersuche mithilfe der Bisect-Funktion. |
-| `git bisect good <commit>` | Markiert einen Commit als funktionierend. |
-| `git bisect bad <commit>` | Markiert einen Commit als fehlerhaft. |
-
-### 1.10 Git Blame (Dateiänderungen nachvollziehen)
-
-| Befehl | Beschreibung |
-|--------|--------------|
-| `git blame <file>` | Zeigt an, welche Commits welche Zeilen einer Datei geändert haben. |
-
-### 1.11 Git Clean (Unversionierte Dateien entfernen)
-
-| Befehl | Beschreibung |
-|--------|--------------|
-| `git clean -f` | Löscht unversionierte Dateien. |
-| `git clean -fd` | Löscht unversionierte Dateien und Verzeichnisse. |
-
-## 2. Arbeiten mit Remote Repositories
-
-### 2.1 Push & Pull
+### 4.1 Remote verwalten
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -92,20 +57,22 @@
 | `git push` | Änderungen pushen. |
 | `git pull` | Änderungen vom Remote-Repository holen. |
 
-### 2.2 Fetch und Merge
+### 4.2 Fetch und Merge
 
 | Befehl | Beschreibung |
 |--------|--------------|
 | `git fetch` | Änderungen vom Remote holen, aber nicht mergen. |
 | `git merge <branch-name>` | Änderungen von einem Branch in den aktuellen Branch mergen. |
 
-## 3. Konflikte und Zurücksetzen
+## 5. Konflikte und Rückgängigmachen
 
-### 3.1 Konflikte lösen
+### 5.1 Konflikte lösen
 
-Konflikte manuell lösen und Dateien committen.
+| Befehl | Beschreibung |
+|--------|--------------|
+| Konflikte manuell lösen und Dateien committen | Konflikte manuell bearbeiten und committen. |
 
-### 3.2 Änderungen rückgängig machen
+### 5.2 Änderungen rückgängig machen
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -116,7 +83,7 @@ Konflikte manuell lösen und Dateien committen.
 | `git checkout -- <file>` | Änderungen an einer Datei verwerfen (seit letztem Commit). |
 | `git reset HEAD <file>` | Datei vom Staging-Bereich entfernen. |
 
-## 4. Stashing (Änderungen zwischenlagern)
+## 6. Stashing (Änderungen zwischenlagern)
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -125,7 +92,7 @@ Konflikte manuell lösen und Dateien committen.
 | `git stash drop` | Gestashte Änderungen verwerfen. |
 | `git stash list` | Alle Stashes anzeigen. |
 
-## 5. Tags erstellen
+## 7. Tags verwalten
 
 | Befehl | Beschreibung |
 |--------|--------------|
@@ -133,17 +100,50 @@ Konflikte manuell lösen und Dateien committen.
 | `git tag` | Alle Tags anzeigen. |
 | `git push origin <tagname>` | Einen Tag pushen. |
 
-## 6. Erweiterte Git Funktionen
+## 8. Erweiterte Git Funktionen
 
-### 6.1 Zusammenführen und Squashen
+### 8.1 Zusammenführen und Squashen
 
 | Befehl | Beschreibung |
 |--------|--------------|
 | `git rebase <branch>` | Änderungen von einem Branch auf einen anderen umschreiben. |
 | `git rebase -i HEAD~n` | Interaktives Rebase für die letzten `n` Commits (z. B. um Commits zusammenzuführen). |
 
-### 6.2 Remote Branch löschen
+### 8.2 Remote Branch löschen
 
 | Befehl | Beschreibung |
 |--------|--------------|
 | `git push origin --delete <branch-name>` | Löscht einen Remote-Branch. |
+
+### 8.3 Commit Nachrichten bearbeiten
+
+| Befehl | Beschreibung |
+|--------|--------------|
+| `git commit --amend` | Die letzte Commit-Nachricht ändern. |
+
+### 8.4 Git Cherry-Pick
+
+| Befehl | Beschreibung |
+|--------|--------------|
+| `git cherry-pick <commit-id>` | Einen bestimmten Commit aus einem anderen Branch anwenden. |
+
+### 8.5 Git Bisect (Fehlersuche)
+
+| Befehl | Beschreibung |
+|--------|--------------|
+| `git bisect start` | Startet die Fehlersuche mithilfe der Bisect-Funktion. |
+| `git bisect good <commit>` | Markiert einen Commit als funktionierend. |
+| `git bisect bad <commit>` | Markiert einen Commit als fehlerhaft. |
+
+### 8.6 Git Blame (Dateiänderungen nachvollziehen)
+
+| Befehl | Beschreibung |
+|--------|--------------|
+| `git blame <file>` | Zeigt an, welche Commits welche Zeilen einer Datei geändert haben. |
+
+### 8.7 Git Clean (Unversionierte Dateien entfernen)
+
+| Befehl | Beschreibung |
+|--------|--------------|
+| `git clean -f` | Löscht unversionierte Dateien. |
+| `git clean -fd` | Löscht unversionierte Dateien und Verzeichnisse. |
