@@ -14,8 +14,14 @@
        - [Sort](CSHARP/LINQ/Methods/SORT.md)
        - [Grouping](CSHARP/LINQ/Methods/GROUPING.md)
        - [Math](CSHARP/LINQ/Methods/MATH.md)
+- [HTML5](HTML)
+  - [Syntax](HTML/Syntax.md)
+  - [Structure](HTML/Structure.md)
+  - [Tags](HTML/Tags.md)
+- [CSS](CSS)
+  - [Syntax](CSS/Syntax.md)
 - [Data Processing](DATAPROCESSING.md)
-- [Git Usage](GIT.md)
+- [Git CLI Usage](GIT.md)
 
 ## 📋 Credits:
 ~ [**FrauJulian**](https://fraujulian.xyz/)
