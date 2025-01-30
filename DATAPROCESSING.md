@@ -2,10 +2,11 @@
 
 ## Grundlagen
 
-- **Bit (Binary Digit)**
+#### Bit (Binary Digit)
 - Kleinste Informationseinheit
 - Werte: `0` oder `1`
-- **Byte**
+
+#### Byte
 - 1 Byte = 8 Bit
 - Kleinste adressierbare Speichereinheit
 
@@ -13,10 +14,13 @@
 
 Binärpräfixe und Dezimalpräfixe sind zwei verschiedene Systeme zur Angabe von Datenmengen:
 
-- **Binärpräfixe** (IEC-Standard - International Electrotechnical Commission): Verwenden eine Basis von `2^10 = 1024` und werden häufig für Speichergrößen verwendet.
+#### *Binärpräfixe* (IEC-Standard - International Electrotechnical Commission)
+- Verwenden eine Basis von `2^10 = 1024` und werden häufig für Speichergrößen verwendet.
 - Beispiel: 1 Kibibyte (KiB) = 1024 Byte
 - Gängige Präfixe: KiB, MiB, GiB, TiB
-- **Dezimalpräfixe** (SI-Standard - Internationales Einheitensystem): Verwenden eine Basis von `10^3 = 1000` und werden oft für Datenübertragungsraten genutzt.
+
+#### *Dezimalpräfixe* (SI-Standard - Internationales Einheitensystem)
+- Verwenden eine Basis von `10^3 = 1000` und werden oft für Datenübertragungsraten genutzt.
 - Beispiel: 1 Kilobyte (KB) = 1000 Byte
 - Gängige Präfixe: KB, MB, GB, TB
 
