@@ -1,206 +1,185 @@
 ﻿# HTML-Tags für den <body>-Bereich
 
-## 1. Strukturierende Tags
+## Struktur-Tags
 
 ### `<header>`
-- Kopfbereich der Seite
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-### `<nav>`
-- Navigationselement
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-### `<section>`
-- Abschnitt der Seite
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-### `<article>`
-- Eigenständiger Inhalt
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-### `<aside>`
-- Seitenleiste oder ergänzende Inhalte
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+- **Nutzen**: Definiert den Kopfbereich einer Seite oder eines Abschnitts
+- **Anwendungsfall**: Enthält Logos, Navigation oder Überschriften
+- Mögliche Attribute: `class`, `id`, `style`
 
 ### `<footer>`
-- Fußbereich der Seite
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+- **Nutzen**: Definiert den Fußbereich einer Seite oder eines Abschnitts
+- **Anwendungsfall**: Enthält Copyright, Links oder Kontaktinfos
+- Mögliche Attribute: `class`, `id`, `style`
 
-### `<div>`
-- Container für Inhalt
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+### `<article>`
+- **Nutzen**: Definiert einen eigenständigen, wiederverwendbaren Inhalt
+- **Anwendungsfall**: Blog-Posts, Nachrichtenartikel, Forenbeiträge
+- Mögliche Attribute: `class`, `id`, `style`
 
-## 2. Textbezogene Tags
+### `<section>`
+- **Nutzen**: Gruppiert thematisch verwandte Inhalte
+- **Anwendungsfall**: Unterteilungen innerhalb eines Artikels oder einer Seite
+- Mögliche Attribute: `class`, `id`, `style`
+
+## Text-Tags
 
 ### `<h1>` bis `<h6>`
-- Überschriften verschiedener Ebenen
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+- **Nutzen**: Überschriften in sechs Stufen (h1 = wichtigste, h6 = unwichtigste)
+- **Anwendungsfall**: Strukturierung von Inhalten
+- Mögliche Attribute: `class`, `id`, `style`
 
 ### `<p>`
-- Absatz
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+- **Nutzen**: Definiert einen Absatz
+- **Anwendungsfall**: Fließtext
+- Mögliche Attribute: `class`, `id`, `style`
 
-### `<span>`
-- Inline-Container für Text
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-### `<strong>`
-- Hervorhebung durch fetten Text
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+### `<a>`
+- **Nutzen**: Erstellt Hyperlinks
+- **Anwendungsfall**: Verlinkung von Seiten oder Ressourcen
+- Mögliche Attribute: `class`, `id`, `style`, `href`, `target`, `rel`, `download`
 
 ### `<u>`
-- Unterstrichener Text
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
+- **Nutzen**: Unterstreicht Text (früher für Betonung, heute für Styling)
+- **Anwendungsfall**: Markierung von bestimmten Wörtern
+- Mögliche Attribute: `class`, `id`, `style`
 
-### `<var>`
-- Variable, die in einem mathematischen oder wissenschaftlichen Kontext verwendet wird
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-## 3. Listen
-
-### `<ul>`
-- Ungeordnete Liste
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-### `<ol>`
-- Geordnete Liste
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [start](#start)
-    - [type](#type)
-
-### `<li>`
-- Listenelement
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-
-## 4. Tabellen
-
-### `<table>`
-- Tabelle
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [border](#border)
-    - [cellpadding](#cellpadding)
-    - [cellspacing](#cellspacing)
-
-## 5. Formularelemente
-
-### `<form>`
-- Formularcontainer
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [action](#action)
-    - [method](#method)
-    - [enctype](#enctype)
-    - [autocomplete](#autocomplete)
-
-### `<input>`
-- Eingabefeld
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [type](#type)
-    - [name](#name)
-    - [value](#value)
-    - [placeholder](#placeholder)
-    - [disabled](#disabled)
-    - [readonly](#readonly)
+### `<b>`
+- **Nutzen**: Fett markierter Text (ohne inhaltliche Bedeutung)
+- **Anwendungsfall**: Optische Hervorhebung
+- Mögliche Attribute: `class`, `id`, `style`
 
 ### `<label>`
-- Bezeichnung für ein Formularfeld
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [for](#for)
+- **Nutzen**: Verknüpft Text mit einem Eingabefeld
+- **Anwendungsfall**: Formulare
+- Mögliche Attribute: `class`, `id`, `style`, `for`
 
-## 6. Medien
-
-### `<iframe>`
-- Inline-Frame für eingebettete Inhalte
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [src](#src)
-    - [width](#width)
-    - [height](#height)
-    - [frameborder](#frameborder)
+## Medien-Tags
 
 ### `<img>`
-- Bild
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [src](#src)
-    - [alt](#alt)
-    - [width](#width)
-    - [height](#height)
+- **Nutzen**: Zeigt Bilder an
+- **Anwendungsfall**: Logos, Illustrationen, Fotos
+- Mögliche Attribute: `class`, `id`, `style`, `src`, `alt`, `width`, `height`, `loading`
 
 ### `<video>`
-- Videoelement
-- Mögliche Attribute:
-    - [class](#class)
-    - [id](#id)
-    - [style](#style)
-    - [src](#src)
-    - [controls](#controls)
-    - [autoplay](#autoplay)
-    - [loop](#loop)
-    - [muted](#muted)
+- **Nutzen**: Zeigt ein Video an
+- **Anwendungsfall**: Tutorials, Werbung, Inhalte
+- Mögliche Attribute: `class`, `id`, `style`, `src`, `controls`, `autoplay`, `loop`, `muted`
+
+### `<audio>`
+- **Nutzen**: Spielt eine Audiodatei ab
+- **Anwendungsfall**: Musik, Podcasts
+- Mögliche Attribute: `class`, `id`, `style`, `src`, `controls`, `autoplay`, `loop`, `muted`
+
+## Formular-Tags
+
+### `<form>`
+- **Nutzen**: Container für Formularelemente
+- **Anwendungsfall**: Benutzerinteraktionen, Dateneingabe
+- Mögliche Attribute: `class`, `id`, `style`, `action`, `method`
+
+### `<input>`
+- **Nutzen**: Erstellt ein Eingabefeld
+- **Anwendungsfall**: Textfelder, Checkboxen, Passworteingaben
+- Mögliche Attribute: `class`, `id`, `style`, `type`, `name`, `value`, `placeholder`, `required`, `disabled`
+
+### `<textarea>`
+- **Nutzen**: Mehrzeiliges Texteingabefeld
+- **Anwendungsfall**: Kommentare, Nachrichten
+- Mögliche Attribute: `class`, `id`, `style`, `rows`, `cols`, `placeholder`, `required`, `maxlength`
+
+### `<select>`
+- **Nutzen**: Dropdown-Auswahl
+- **Anwendungsfall**: Auswahlmenüs
+- Mögliche Attribute: `class`, `id`, `style`, `name`, `multiple`
+
+### `<button>`
+- **Nutzen**: Erstellt einen Button
+- **Anwendungsfall**: Absenden von Formularen, Aktionen
+- Mögliche Attribute: `class`, `id`, `style`, `type`
+
+## Tabellen-Tags
+
+### `<table>`
+- **Nutzen**: Erstellt eine Tabelle
+- **Anwendungsfall**: Datenorganisation
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<thead>`
+- **Nutzen**: Enthält Tabellenkopf
+- **Anwendungsfall**: Titelzeilen
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<tbody>`
+- **Nutzen**: Enthält den Tabellenkörper
+- **Anwendungsfall**: Hauptinhalte der Tabelle
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<tfoot>`
+- **Nutzen**: Enthält Tabellenfuß
+- **Anwendungsfall**: Summen, Anmerkungen
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<tr>`
+- **Nutzen**: Erstellt eine Tabellenzeile
+- **Anwendungsfall**: Jede Zeile in einer Tabelle
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<td>`
+- **Nutzen**: Erstellt eine Tabellenzelle
+- **Anwendungsfall**: Inhalte innerhalb einer Tabelle
+- Mögliche Attribute: `class`, `id`, `style`, `rowspan`, `colspan`
+
+### `<th>`
+- **Nutzen**: Erstellt eine Tabellenkopfzelle
+- **Anwendungsfall**: Titel von Spalten oder Zeilen
+- Mögliche Attribute: `class`, `id`, `style`, `scope`
+
+## Listen-Tags
+
+### `<ol>`
+- **Nutzen**: Geordnete (nummerierte) Liste
+- **Anwendungsfall**: Schritt-für-Schritt-Anleitungen
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<ul>`
+- **Nutzen**: Ungeordnete (Punkt-)Liste
+- **Anwendungsfall**: Aufzählungen
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<li>`
+- **Nutzen**: Listenelement
+- **Anwendungsfall**: Einzelner Punkt in `<ol>` oder `<ul>`
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<dl>`
+- **Nutzen**: Definiert eine Definitionsliste
+- **Anwendungsfall**: Glossare, Begriffsdefinitionen
+- Mögliche Attribute: `class`, `id`, `style`
+
+## Sonstige-Tags
+
+### `<script>`
+- **Nutzen**: Fügt JavaScript-Code ein
+- **Anwendungsfall**: Interaktive Webseiten
+- Mögliche Attribute: `class`, `id`, `style`, `src`, `async`, `defer`
+
+### `<style>`
+- **Nutzen**: Enthält CSS-Code
+- **Anwendungsfall**: Inline-CSS
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<hr>`
+- **Nutzen**: Horizontale Linie zur Trennung
+- **Anwendungsfall**: Thematische Abschnitte
+- Mögliche Attribute: `class`, `id`, `style`
+
+### `<br>`
+- **Nutzen**: Zeilenumbruch
+- **Anwendungsfall**: Manuelle Umbrüche
+- Mögliche Attribute: `class`, `id`, `style`
+
+---
 
 ## Erklärung der Attribute
 
